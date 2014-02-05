@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'website',
     'south',
+    'markdown_deux',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -53,6 +54,9 @@ ROOT_URLCONF = 'TagTempo.urls'
 
 WSGI_APPLICATION = 'TagTempo.wsgi.application'
 
+TEMPLATE_DIRS = (
+os.path.join(BASE_DIR,'templates')
+)
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
